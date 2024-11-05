@@ -1,0 +1,19 @@
+## IPv6 Configuration Guide
+
+### Windows
+1. Go to Control Panel -> Network and Internet -> Network Connections.
+2. Right-click on the network adapter and select Properties.
+3. Check the "Internet Protocol Version 6 (TCP/IPv6)" option.
+4. Enter the IPv6 address, subnet, and default gateway.
+
+### Linux
+1. Edit `/etc/network/interfaces` for Debian-based systems or `/etc/sysconfig/network-scripts/ifcfg-eth0` for CentOS.
+2. Add the following configuration:
+    iface eth0 inet6 static address <IPv6 Address> netmask 64 gateway <IPv6 Gateway>
+
+
+### macOS
+1. Go to System Preferences -> Network.
+2. Select your network connection and click Advanced.
+3. Under TCP/IP, set Configure IPv6 to "Manually".
+4. Enter the IPv6 address and router.
